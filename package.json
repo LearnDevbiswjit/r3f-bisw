@@ -4,12 +4,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  "netlify": {
+    "build": "vite build"
+  },
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "instant": "concurrently \"vite build --watch\" \"live-server dist --port=4173 --quiet\""
   },
+
   "dependencies": {
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "8.15",
@@ -34,6 +40,7 @@
     "threejs-meshline": "^2.0.12",
     "useref": "^1.4.4"
   },
+
   "devDependencies": {
     "@lingui/babel-plugin-lingui-macro": "^5.5.2",
     "@types/react-dom": "^18.2.19",
